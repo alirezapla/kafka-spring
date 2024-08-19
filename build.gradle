@@ -20,10 +20,14 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-cache'
 	implementation 'org.springframework.kafka:spring-kafka'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.kafka:spring-kafka-test'
+	testImplementation 'org.springframework.boot:spring-boot-testcontainers'
+	testImplementation 'org.testcontainers:junit-jupiter'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	implementation 'com.hazelcast:hazelcast'
 }
 
 tasks.named('test') {
